@@ -1,0 +1,78 @@
+.splitter {
+  width: 100vw;
+  height: 100%;
+  display: inline-flex;
+}
+
+.sidenav {
+  background-color: #006874;
+  box-shadow: black 0 0 10px;
+  width: 20vw;
+  padding: 15px;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  width: 70vw;
+  height: 100vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto 0;
+  margin-top: 15px;
+  flex-grow: 0;
+  overflow: scroll;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.125;
+  margin-bottom: 1rem;
+}
+
+p:not(.menu-label) {
+  padding-bottom: 1rem;
+}
+
+code {
+  background-color:#202225;
+  color: #abadb1;
+}
+
+a {
+  color: #7cc1ff;
+  transition: 0.1s;
+}
+
+a:hover {
+  color: #0a8bfe;
+}

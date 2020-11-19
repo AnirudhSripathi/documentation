@@ -1,0 +1,70 @@
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://some-random-api.ml">
+        <img src="https://i.some-random-api.ml/logo.png" width="28" height="28">
+        <a class="navbar-item has-text-weight-semibold" style="margin-left: -15px;">Some Random Api</a>
+      </a>
+  
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="nav" class="navbar-menu">
+      <div class="navbar-start">
+
+      </div>
+  
+      <div class="navbar-end">
+        <a class="navbar-item" href="/">
+          Home
+        </a>
+        <a class="navbar-item" href="https://docs.some-random-api.ml">
+          Documentation
+        </a>
+        <a class="navbar-item" href="/discord">
+          Discord
+        </a>
+        <% if (typeof user !== 'object') { %>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a style="color: white;" class="button border" href="/login">
+              Log in
+            </a>
+          </div>
+        </div>
+        <% } else { %>
+        <div class="login-btn navbar-item has-dropdown">
+          <a class="navbar-link">
+            <img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>.png" width="28" height="28" class="d-inline-block align-top is-rounded" alt="" style="border-radius: 50%;">
+          <%=user.username%>
+          </a>
+          <div class="navbar-dropdown is-boxed is-right">
+          <a class="navbar-item" href="/dashboard/me">
+            Profile
+          </a>
+          <a class="navbar-item" href="/dashboard/add">
+            Add Data
+          </a>
+          <% if (user.id === '423675224395874314' || user.id === '441851864665948164')  { %>
+            <hr class="navbar-divider">
+            <a class="navbar-item" href="/dashboard/queue">
+              Queue
+            </a>
+          <% } %>
+            <hr class="navbar-divider">
+          <a class="navbar-item" href="/logout">
+            Logout
+          </a>
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/client.js"></script>
+

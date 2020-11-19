@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta property="og:title" content="Some Random Api &bullet; Documentation | Yeet" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://some-random-api.ml/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://i.some-random-api.ml/logo.png">
+    <title>Some Random Api &bull; Documentation | Yeet</title>
+</head>
+<style>
+    .splitter {
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+    }
+
+    .sidenav {
+        background-color: #005668;
+        box-shadow: black 0 0 10px;
+        width: 20%;
+        padding: 15px;
+        height: 100%;
+    }
+
+    .container {
+        width: 70%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 15px;
+    }
+    .page-footer {
+        margin-top: 0;
+    }
+
+    .menu-label {
+        color: white;
+        font-weight: 800;
+        font-size:medium;
+    }
+  
+  .menu-list a {
+    border-radius: 5px;
+  }
+  
+   .menu-list a.is-active {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .menu-list a:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+<body class="has-navbar-fixed-top">
+    <div class="header">
+        <%- include("parts/navbar") %>
+    </div>
+
+    <div class="splitter">
+        <div class="sidenav">
+            <aside class="menu">
+                <p class="menu-label">
+                    Introduction
+                </p>
+                <ul class="menu-list">
+                    <li><a class="is-active">Starting</a></li>
+                    <li><a>Installing</a></li>
+                </ul>
+                <p class="menu-label">
+                    Facts
+                </p>
+                <ul class="menu-list">
+                    <li><a>bird</a></li>
+                    <li>
+                        <a>Useless</a>
+                        <ul>
+                            <li><a>Telk</a></li>
+                            <li><a>Is</a></li>
+                            <li><a>Gay</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Cat</a></li>
+                    <li><a>Dog</a></li>
+                    <li><a>Fox</a></li>
+                </ul>
+                <p class="menu-label">
+                    Animu
+                </p>
+                <ul class="menu-list">
+                    <li><a>Hug</a></li>
+                    <li><a>Pat</a></li>
+                    <li><a>Wink</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="container">
+            <h1 class="title is-1">Introduction</h1>
+            <hr>
+            <p>Welcome to some random api documentation. </p>
+            <h2 class="title is-2" id="before-you-start">Before you start</h2>
+            <p>This api only uses the <strong>GET</strong> method for its endpoints</p>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+
+</html>

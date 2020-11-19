@@ -1,0 +1,20 @@
+{
+  "name": "some-random-docs",
+  "version": "1.0.0",
+  "description": "Some random api documentation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "marked": "^1.2.2"
+  },
+  "engines": {
+    "node": "13.x"
+  },
+  "license": "MIT",
+  "keywords": []
+}
