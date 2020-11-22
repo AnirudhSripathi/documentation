@@ -5,12 +5,16 @@
 }
 
 .sidenav {
+  position: sticky;
   background-color: #006874;
   box-shadow: black 0 0 10px;
   width: 20vw;
   padding: 15px;
-  max-height: 100vh;
-  overflow: scroll;
+  top: 3.25rem;
+  height: calc(100vh - 3.25rem);
+  overflow-y: scroll;
+  scrollbar-color: #bbcced #004F5B;
+  scrollbar-width: 10px;
 }
 
 
@@ -21,12 +25,12 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #004F5B;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #bbcced;
 }
 
 /* Handle on hover */
@@ -36,13 +40,12 @@
 
 .container {
   width: 70vw;
-  height: 100vh;
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 50px;
   margin: auto 0;
   margin-top: 15px;
   flex-grow: 0;
-  overflow: scroll;
 }
 
 h1 {
@@ -56,6 +59,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.125;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -75,4 +79,20 @@ a {
 
 a:hover {
   color: #0a8bfe;
+}
+
+li {
+  margin-left: 10px;
+  list-style: disc;
+}
+ul li{ 
+  margin-left: 20px;
+}
+
+::-moz-selection { 
+  background: rgba(108, 160, 245,0.1);
+}
+
+::selection {
+  background:rgba(108, 160, 245,0.5);
 }

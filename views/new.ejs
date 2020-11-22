@@ -49,7 +49,7 @@
         <div class="sidenav">
             <aside class="menu">
                 <% Object.keys(sidebar).forEach(category => { %>
-                <p class="menu-label"><%=category%></p>
+                <p class="menu-label"><%=category.replace('-', ' ')%></p>
                 <ul class="menu-list" id="<%=category%>">
                     <% sidebar[category].forEach(thing => { %>
                     <li>
@@ -71,7 +71,7 @@
 
         </div>
     </div>
-    <script src="https://some-random-docs.glitch.me/docs/prism.js"></script>
+    <script src="/prism.js"></script>
 
 </body>
 
