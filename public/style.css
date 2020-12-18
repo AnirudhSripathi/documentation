@@ -17,6 +17,9 @@
   scrollbar-width: 10px;
 }
 
+ul li {
+  list-style-type: none;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -35,7 +38,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #7799db;
 }
 
 .container {
