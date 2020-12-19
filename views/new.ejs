@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://some-random-api.ml/style.css" rel="stylesheet">
     <link href="/prism.css" rel="stylesheet">
-    <link href="/style.css" rel="stylesheet">
+    <link href="/docsstyle.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://i.some-random-api.ml/logo.png">
     <title>Some Random Api &bull; Documentation | Yeet</title>
 </head>
@@ -38,6 +38,15 @@
     .menu-list a:hover {
         background-color: rgba(0, 0, 0, 0.3);
     }
+
+    .number {
+        background-color: rgba(0,0,0,0);
+        margin-right: 0;
+        padding: 0;
+        display: inline-flex;
+        font-size: inherit;
+        height: inherit;
+    }
 </style>
 
 <body class="has-navbar-fixed-top">
@@ -48,18 +57,20 @@
     <div class="splitter">
         <div class="sidenav">
             <aside class="menu">
-                <% Object.keys(sidebar).forEach(category => { %>
-                <p class="menu-label"><%=category.replace('-', ' ')%></p>
-                <ul class="menu-list" id="<%=category%>">
-                    <% sidebar[category].forEach(thing => { %>
-                    <li>
-                        <a href="/docs/<%= category%>/<%= thing %>">
-                            <%= thing %>
-                        </a>
-                    </li>
+                <% Object.keys(sidebar).forEach(category=> { %>
+                    <p class="menu-label">
+                        <%=category.replace('-', ' ' )%>
+                    </p>
+                    <ul class="menu-list" id="<%=category%>">
+                        <% sidebar[category].forEach(thing=> { %>
+                            <li>
+                                <a href="/docs/<%= category%>/<%= thing %>">
+                                    <%= thing %>
+                                </a>
+                            </li>
+                            <% }) %>
+                    </ul>
                     <% }) %>
-                </ul>
-                <% }) %>
 
             </aside>
         </div>

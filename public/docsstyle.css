@@ -17,9 +17,15 @@
   scrollbar-width: 10px;
 }
 
-ul li {
+.sidenav ul li {
   list-style-type: none;
 }
+
+body > div.splitter > div.container > p > img {
+  width: 30%;
+}
+
+
 
 /* width */
 ::-webkit-scrollbar {

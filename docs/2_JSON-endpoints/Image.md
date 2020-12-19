@@ -10,8 +10,7 @@
 - **Example output:**
 ```js
 {
-    "image": "direct url to the image",
-    "fact": "animal stinky"
+    "link": "direct url to the image",
 }
 ```
 
