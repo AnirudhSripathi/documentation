@@ -33,7 +33,12 @@
     - None
 - **Example output:**
 ```js
-
+{
+  id: 9,
+  image: "https://i.some-random-api.ml/WbL79WnQh0.png",
+  caption: "Every pvp strategy",
+  category: "anime"
+}
 ```
 
 # Base64
@@ -43,12 +48,14 @@
 - **URL:** `https://some-random-api.ml/base64`
 - **Required parameters:**
     - None
-- **Required queries:**
+- **Required queries:** (choose one)
     - decode
     - encode
 - **Example output:**
 ```js
-
+{
+  base64: "aGVsbG8="
+}
 ```
 
 # Binary
@@ -58,12 +65,14 @@
 - **URL:** `https://some-random-api.ml/binary`
 - **Required parameters:**
     - None
-- **Required queries:**
+- **Required queries:** (choose one)
     - decode
-    - encode
+    - text
 - **Example output:**
 ```js
-
+{
+binary: "0110100001100101011011000110110001101111"
+}
 ```
 
 # Joke
@@ -77,21 +86,9 @@
     - None
 - **Example output:**
 ```js
-
-```
-
-# Joke
-
-## Endpoint Information
-- **Method:** GET
-- **URL:** `https://some-random-api.ml/joke`
-- **Required parameters:**
-    - None
-- **Required queries:**
-    - None
-- **Example output:**
-```js
-
+{
+  joke: "I was struggling to figure out how lightning works then it struck me."
+}
 ```
 
 # Minecraft
@@ -105,6 +102,15 @@
     - None
 - **Example output:**
 ```js
-
+{
+  username: "G8Nerd",
+  uuid: "5da80f2bcbe04b9c89feffa13bf29240",
+  name_history: [
+    {
+      name: "G8Nerd",
+      changedToAt: "Original Name"
+    }
+  ]
+}
 ```
 

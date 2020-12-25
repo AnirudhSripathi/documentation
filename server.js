@@ -10,7 +10,7 @@ app.use('/docs', express.static('public'));
 let sidebar = {}
 
 app.get("/", (req, res) => {
-    res.render('main')
+    res.send('go to /docs/welcome/introduction')
 })
 
 let categories = fs.readdirSync('./docs/');
