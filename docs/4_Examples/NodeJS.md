@@ -1,3 +1,1 @@
-## NodeJS
-
-im bad at coding stop looking
+stop being gey euan stop being gey euan stop being gey euan stop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euanstop being gey euan
